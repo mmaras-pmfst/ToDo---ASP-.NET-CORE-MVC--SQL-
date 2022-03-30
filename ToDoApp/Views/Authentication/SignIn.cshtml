@@ -1,0 +1,23 @@
+﻿
+@{
+    ViewData["Title"] = "SignIn";
+}
+
+    <div class="loginBox">
+        <img src="~/img/userFinal.png" class="avatar" alt="" />
+        <form method="POST" enctype="multipart/form-data" asp-controller="Authentication" asp-action="SignIn">
+            <input type="text" name="username" placeholder="Username.." />
+
+            <input type="password" name="password" id="" placeholder="Password.." />
+
+            <input type="submit" name="login" value="Login" />
+
+            <div class="links">
+                <a href="#">Lost your password?</a><br />
+
+                <a href="/todo/signUp">Don't have an account?</a>
+            </div>
+        </form>
+        
+    </div>
+

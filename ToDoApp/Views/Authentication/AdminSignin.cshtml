@@ -1,0 +1,24 @@
+﻿
+@{
+    ViewData["Title"] = "AdminSignin";
+}
+<style>
+    h2 {
+        text-align:center
+    }
+</style>
+<div class="loginBox">
+    <img src="~/img/userFinal.png" class="avatar" alt="" />
+    <h2>Admin Sign in</h2>
+    <br>
+    <br />
+    <form method="POST" enctype="multipart/form-data" asp-controller="Authentication" asp-action="AdminSignin">
+
+        <input type="text" name="username" placeholder="Username.." />
+
+        <input type="password" name="password" id="" placeholder="Password.." />
+
+        <input type="submit" name="login" value="Login" />
+    </form>
+    
+</div>
